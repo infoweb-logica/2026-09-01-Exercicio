@@ -13,12 +13,16 @@
 ### 1. Execute mentamelmente ("faça o chinês") do programa python abaixo e para cada conjunto de entrada, escreva a saída correspondente.
 
 ```python
-numero = int(input())
-soma = 0
-for contador in range(numero):
-  print(f'contando {contador} de {numero}.')
-  soma += numero # soma = soma + numero
-print(f'soma: {soma}')
+numeros = [int(numero) for numero in input().split()]
+# numeros = [23, -32, 1, -2, 3, 4, -5, 6, 7, 8, 9, 10]
+resultado = 0
+outro_resultado = 1
+for numero in numeros:
+   resultado += numero
+   outro_resultado *= numero
+
+print(f"resultado 1: {resultado}")
+print(f"resultado 2: {outro_resultado}")
 ```
 
 | Entradas  | Saídas |
